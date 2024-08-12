@@ -12,8 +12,8 @@ const NoteList = ({noteList}) => {
 
   const removeNote = async (note) => {
     if (window.confirm('Delete Note?')) {
-      const deletedNote = await NoteAPI.deleteNoteById(note.id);
-      dispatch(deleteNote(deletedNote));
+      NoteAPI.deleteNoteById(note.id);
+      dispatch(deleteNote(note));
     }
   };
 
