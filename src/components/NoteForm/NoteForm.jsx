@@ -116,7 +116,7 @@ const NoteForm = ({
         {isEditable && titleInput}
       </div>
       <div className='mb-3'>
-        {isEditable ? contentInput : <pre>{note.content}</pre>}
+        {isEditable ? contentInput : <pre style={{whiteSpace: 'break-spaces'}}>{note.content}</pre>}
       </div>
       {onSubmitBtn && submitBtn}
     </div>
