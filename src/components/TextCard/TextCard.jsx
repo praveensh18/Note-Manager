@@ -31,7 +31,7 @@ const TextCard = ({ title, subtitle, content, onClickCard, onClickTrash }) => {
 						onClick={onClickTrash_}
           />
         </div>
-        <h6 className={`card-subtitle ${s.subtitle}`}>{subtitle}</h6>
+        <h6 className={`card-subtitle mb-2 text-muted`}>{subtitle}</h6>
         <p className={`card-text ${s.text_content}`}>{content}</p>
       </div>
     </div>
